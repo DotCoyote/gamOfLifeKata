@@ -24,3 +24,17 @@ wget -q -O /tmp/composer-setup.php https://getcomposer.org/installer
 php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 rm /tmp/composer-setup.php
 
+# install nvm and node
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm install node --lts
+npm install --global yarn
+cd /app
+yarn global add typescript
+yarn add --dev jest
+yarn add --dev ts-jest
+yarn add --dev ts-node
+yarn add --dev @types/jest
+
+

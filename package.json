@@ -1,0 +1,17 @@
+{
+  "name": "coding-kata-skeleton",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.3.1",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1"
+  }
+}
