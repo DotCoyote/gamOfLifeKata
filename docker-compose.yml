@@ -4,4 +4,4 @@ services:
     build: .
     volumes:
       - .:/app
-    command: bash -c "cd /app && composer install && tail -f /dev/null"
+    command: bash -c "cd /app && yarn install && composer install && tail -f /dev/null"
