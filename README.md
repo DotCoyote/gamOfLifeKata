@@ -16,8 +16,10 @@ This is a simple skeleton to use when running the tests. Perfect for practicing 
 ### PHP
 - To run tests using interactive shell 
   - execute `docker-compose exec php bash` to enter the shell
+  - execute `vendor/bin/codecept build`
   - execute `vendor/bin/codecept run`
 - To run tests from the host directly
+  - `docker-compose exec php bash -c './vendor/bin/codecept build'`
   - `docker-compose exec php bash -c './vendor/bin/codecept run'`
 
 ### TS

@@ -11,6 +11,7 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt
 wget -qO - https://packages.sury.org/php/apt.gpg | apt-key add -
 
 apt update
+apt install -y zip
 apt install -y php8.1 \
 php8.1-curl \
 php8.1-bcmath \
@@ -32,7 +33,7 @@ nvm install node --lts
 npm install --global yarn
 cd /app
 yarn global add typescript
-yarn add --dev jest
+yarn add jest
 yarn add --dev ts-jest
 yarn add --dev ts-node
 yarn add --dev @types/jest
