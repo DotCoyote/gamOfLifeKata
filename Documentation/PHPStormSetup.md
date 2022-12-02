@@ -50,3 +50,7 @@
 - you will see the results in run window.
 
 ![](Screenshoots/running-tests-step-2.png)
+
+- if you want to see also passing tests do not forget to turn it on
+
+![](Screenshoots/running-tests-step-3.png)
