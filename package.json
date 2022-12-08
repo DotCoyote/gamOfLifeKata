@@ -6,7 +6,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "start": "ts-node src/gameOfLife.ts"
   },
   "devDependencies": {
     "@jest/globals": "^29.3.1",
